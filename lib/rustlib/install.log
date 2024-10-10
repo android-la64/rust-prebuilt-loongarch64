@@ -1,0 +1,31 @@
+$ umask 022 && mkdir -p "/home/foxsen/android/rust-toolchain/out/package/lib/rustlib"
+$ echo "3" > "/home/foxsen/android/rust-toolchain/out/package/lib/rustlib/rust-installer-version"
+install: creating uninstall script at /home/foxsen/android/rust-toolchain/out/package/lib/rustlib/uninstall.sh
+$ cp /home/foxsen/android/rust-toolchain/out/rustc/build/tmp/tarball/clippy/x86_64-unknown-linux-gnu/clippy-1.80.1-dev-x86_64-unknown-linux-gnu/install.sh /home/foxsen/android/rust-toolchain/out/package/lib/rustlib/uninstall.sh
+install: installing component 'clippy-preview'
+$ echo "clippy-preview" >> "/home/foxsen/android/rust-toolchain/out/package/lib/rustlib/components"
+$ umask 022 && mkdir -p "/home/foxsen/android/rust-toolchain/out/package/bin"
+install: copying file /home/foxsen/android/rust-toolchain/out/package/bin/cargo-clippy
+$ cp /home/foxsen/android/rust-toolchain/out/rustc/build/tmp/tarball/clippy/x86_64-unknown-linux-gnu/clippy-1.80.1-dev-x86_64-unknown-linux-gnu/clippy-preview/bin/cargo-clippy /home/foxsen/android/rust-toolchain/out/package/bin/cargo-clippy
+$ chmod 755 /home/foxsen/android/rust-toolchain/out/package/bin/cargo-clippy
+$ echo "file:/home/foxsen/android/rust-toolchain/out/package/bin/cargo-clippy" >> "/home/foxsen/android/rust-toolchain/out/package/lib/rustlib/manifest-clippy-preview"
+$ umask 022 && mkdir -p "/home/foxsen/android/rust-toolchain/out/package/bin"
+install: copying file /home/foxsen/android/rust-toolchain/out/package/bin/clippy-driver
+$ cp /home/foxsen/android/rust-toolchain/out/rustc/build/tmp/tarball/clippy/x86_64-unknown-linux-gnu/clippy-1.80.1-dev-x86_64-unknown-linux-gnu/clippy-preview/bin/clippy-driver /home/foxsen/android/rust-toolchain/out/package/bin/clippy-driver
+$ chmod 755 /home/foxsen/android/rust-toolchain/out/package/bin/clippy-driver
+$ echo "file:/home/foxsen/android/rust-toolchain/out/package/bin/clippy-driver" >> "/home/foxsen/android/rust-toolchain/out/package/lib/rustlib/manifest-clippy-preview"
+$ umask 022 && mkdir -p "/home/foxsen/android/rust-toolchain/out/package/share/doc/clippy"
+install: copying file /home/foxsen/android/rust-toolchain/out/package/share/doc/clippy/LICENSE-APACHE
+$ cp /home/foxsen/android/rust-toolchain/out/rustc/build/tmp/tarball/clippy/x86_64-unknown-linux-gnu/clippy-1.80.1-dev-x86_64-unknown-linux-gnu/clippy-preview/share/doc/clippy/LICENSE-APACHE /home/foxsen/android/rust-toolchain/out/package/share/doc/clippy/LICENSE-APACHE
+$ chmod 644 /home/foxsen/android/rust-toolchain/out/package/share/doc/clippy/LICENSE-APACHE
+$ echo "file:/home/foxsen/android/rust-toolchain/out/package/share/doc/clippy/LICENSE-APACHE" >> "/home/foxsen/android/rust-toolchain/out/package/lib/rustlib/manifest-clippy-preview"
+$ umask 022 && mkdir -p "/home/foxsen/android/rust-toolchain/out/package/share/doc/clippy"
+install: copying file /home/foxsen/android/rust-toolchain/out/package/share/doc/clippy/LICENSE-MIT
+$ cp /home/foxsen/android/rust-toolchain/out/rustc/build/tmp/tarball/clippy/x86_64-unknown-linux-gnu/clippy-1.80.1-dev-x86_64-unknown-linux-gnu/clippy-preview/share/doc/clippy/LICENSE-MIT /home/foxsen/android/rust-toolchain/out/package/share/doc/clippy/LICENSE-MIT
+$ chmod 644 /home/foxsen/android/rust-toolchain/out/package/share/doc/clippy/LICENSE-MIT
+$ echo "file:/home/foxsen/android/rust-toolchain/out/package/share/doc/clippy/LICENSE-MIT" >> "/home/foxsen/android/rust-toolchain/out/package/lib/rustlib/manifest-clippy-preview"
+$ umask 022 && mkdir -p "/home/foxsen/android/rust-toolchain/out/package/share/doc/clippy"
+install: copying file /home/foxsen/android/rust-toolchain/out/package/share/doc/clippy/README.md
+$ cp /home/foxsen/android/rust-toolchain/out/rustc/build/tmp/tarball/clippy/x86_64-unknown-linux-gnu/clippy-1.80.1-dev-x86_64-unknown-linux-gnu/clippy-preview/share/doc/clippy/README.md /home/foxsen/android/rust-toolchain/out/package/share/doc/clippy/README.md
+$ chmod 644 /home/foxsen/android/rust-toolchain/out/package/share/doc/clippy/README.md
+$ echo "file:/home/foxsen/android/rust-toolchain/out/package/share/doc/clippy/README.md" >> "/home/foxsen/android/rust-toolchain/out/package/lib/rustlib/manifest-clippy-preview"
